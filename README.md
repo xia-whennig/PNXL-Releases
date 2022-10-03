@@ -20,7 +20,7 @@ Supported variants are
 | 4W	| DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 1G (White Rabbit) <br/> MicroZed Zynq controller	| 0x2540 <br/> (unchanged from pre-release) |	sw-arm-pnxl: 3.31 <br/>  sw-host-pnxl: 09072022 <br/>  sw-igor-pnxl: 6.21 <br/> sd-bootfiles-pnxl: MZ-3.25 <br/>  sd-image-pnxl: 09072022 |
  
 ## Release Information
-A full Pixie-Net XL Software/firmware release consists of the following components
+A full Pixie-Net XL software/firmware release consists of the following components
 
 | Component name | Description	| Install & Update |
 | -------------- | ------------ | ----------------- |
