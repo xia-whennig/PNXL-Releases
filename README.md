@@ -14,7 +14,7 @@ Supported variants are
 
 | Variant ID	| Hardware Revision |	Firmware Revision |	Software Revision |
 | ----------- | ----------------- | ----------------- | ----------------- |
-| 7  | DB06, 8  channel, <br/> 14 bit, 500 MSPS, <br/> 10G <br/> Z-Turn Zynq controller | 0x3171 |	[sw-arm-pnxl: 3.31](../sw-arm-pnxl-3p31.zip) <br/> sw-host-pnxl: 09072022 <br/> sw-igor-pnxl: 6.21 <br/> sd-bootfiles-pnxl: ZT-3.25 <br/> sd-image-pnxl: 09072022 |
+| 7  | DB06, 8  channel, <br/> 14 bit, 500 MSPS, <br/> 10G <br/> Z-Turn Zynq controller | 0x3171 |	[sw-arm-pnxl: 3.31](../release_packages/sw-arm-pnxl-3p31.zip) <br/> sw-host-pnxl: 09072022 <br/> sw-igor-pnxl: 6.21 <br/> sd-bootfiles-pnxl: ZT-3.25 <br/> sd-image-pnxl: 09072022 |
 | 4	 | DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 10G <br/> Z-Turn Zynq controller <br/> Optional TTCL adapter |	0x3141 |   -"- |
 | 1	 | DB01, 8  channel, <br/> 14 bit, 125 MSPS, <br/> 10G <br/> Z-Turn Zynq controller |	0x3111 | -"- |	
 | 4W	| DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 1G (White Rabbit) <br/> MicroZed Zynq controller	| 0x2540 <br/> (unchanged from pre-release) |	sw-arm-pnxl: 3.31 <br/>  sw-host-pnxl: 09072022 <br/>  sw-igor-pnxl: 6.21 <br/> sd-bootfiles-pnxl: MZ-3.25 <br/>  sd-image-pnxl: 09072022 |
