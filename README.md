@@ -12,10 +12,10 @@ Supported variants are
 
 | Part Number | Variant ID	| Hardware Revision |	Firmware Revision |	Software Revision |
 | ----------- | ----------- | ----------------- | ----------------- | ----------------- |
-| Pixie-Net-8-14-500 |7  | DB06, 8  channel, <br/> 14 bit, 500 MSPS, <br/> 10G <br/> Z-Turn Zynq controller | 0x3171 |	[sw-arm-pnxl: 3.32](./release_packages/sw-arm-pnxl-3p32.zip) <br/> sw-host-pnxl: 09072022 <br/> sw-igor-pnxl: 6.21 <br/> sd-bootfiles-pnxl: ZT-3.25 <br/> sd-image-pnxl: 09072022 <br/> [Pixie_Net_XL_Manual: 3.32](./release_packages/Pixie_Net_XL_Manual.pdf) |
+| Pixie-Net-8-14-500 |7  | DB06, 8  channel, <br/> 14 bit, 500 MSPS, <br/> 10G <br/> Z-Turn Zynq controller | 0x3171 |	[sw-arm-pnxl: 3.32](./release_packages/sw-arm-pnxl-3p32.zip) <br/> sw-host-pnxl: 09072022 <br/> [sw-igor-pnxl: 6.21](./release_packages/sw-igor-pnxl-6p21.zip) <br/> sd-bootfiles-pnxl: ZT-3.25 <br/> sd-image-pnxl: 09072022 <br/> [Pixie_Net_XL_Manual: 3.32](./release_packages/Pixie_Net_XL_Manual.pdf) |
 | Pixie-Net-16-14-250 | 4	 | DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 10G <br/> Z-Turn Zynq controller <br/> Optional TTCL adapter |	0x3141 |   -"- |
 | Pixie-Net-8-14-125 | 1	 | DB01, 8  channel, <br/> 14 bit, 125 MSPS, <br/> 10G <br/> Z-Turn Zynq controller |	0x3111 | -"- |	
-| Pixie-Net-16-14-250W | 4W	| DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 1G (White Rabbit) <br/> MicroZed Zynq controller	| 0x2540 <br/> (unchanged from pre-release) |	[sw-arm-pnxl: 3.32](./release_packages/sw-arm-pnxl-3p32.zip) <br/>  sw-host-pnxl: 09072022 <br/>  sw-igor-pnxl: 6.21 <br/> sd-bootfiles-pnxl: MZ-3.25 <br/>  sd-image-pnxl: 09072022 <br/> [Pixie_Net_XL_Manual: 3.32](./release_packages/Pixie_Net_XL_Manual.pdf) |
+| Pixie-Net-16-14-250W | 4W	| DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 1G (White Rabbit) <br/> MicroZed Zynq controller	| 0x2540 <br/> (unchanged from pre-release) |	[sw-arm-pnxl: 3.32](./release_packages/sw-arm-pnxl-3p32.zip) <br/>  sw-host-pnxl: 09072022 <br/>  [sw-igor-pnxl: 6.21](./release_packages/sw-igor-pnxl-6p21.zip) <br/> sd-bootfiles-pnxl: MZ-3.25 <br/>  sd-image-pnxl: 09072022 <br/> [Pixie_Net_XL_Manual: 3.32](./release_packages/Pixie_Net_XL_Manual.pdf) |
  
 ## Release Information
 A full Pixie-Net XL software/firmware release consists of the following components
