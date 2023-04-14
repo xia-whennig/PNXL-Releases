@@ -1,21 +1,26 @@
 # Pixie-Net XL Release Notes
 
 
-## Version 3.32, November 2022
+## Version 3.38, April 2022
 Release updates include
--	Debugged and tested CFD in variant 4W
+-	Bug fix in FW for time stamp (high word) for run type 0x411
+-	Bug fix in SW for MCA spectra at high rates
+-	Bug fix in Igor for extraction of listmode data for channel 3, CFD computation
+-	Add new functionality and parameters for trigger distribution 
 
 Known bugs:
-- Variant 1: The automatic ADC initialization at boot time sometimes fails. This will be reported as a warning by ./progfippi. To correct, execute ./adcinit manually from the command line.  
+- Variant 1: The automatic ADC initialization at boot time sometimes fails. This will be reported as a warning by ./progfippi. To correct, execute ./adcinit manually from the command line.
+
+Note: Version 3.2x of the Zynq controller firmware is compatible with version 3.3x of the processing firmware and software, _except_ for DB08 prototypes
 
 Supported variants are 
 
 | Part Number | Variant ID	| Hardware Revision |	Firmware Revision |	Software Revision |
 | ----------- | ----------- | ----------------- | ----------------- | ----------------- |
-| Pixie-Net-8-14-500 |7  | DB06, 8  channel, <br/> 14 bit, 500 MSPS, <br/> 10G <br/> Z-Turn Zynq controller | 0x3171 |	[sw-arm-pnxl: 3.32](./release_packages/sw-arm-pnxl-3p32.zip) <br/> [sw-host-pnxl: 09072022](./release_packages/sw-host-pnxl-09072022.zip)<br/> [sw-igor-pnxl: 6.21](./release_packages/sw-igor-pnxl-6p21.zip) <br/> sd-bootfiles-pnxl: ZT-3.25 <br/> sd-image-pnxl: 09072022 <br/> [Pixie_Net_XL_Manual: 3.32](./release_packages/Pixie_Net_XL_Manual.pdf) |
-| Pixie-Net-16-14-250 | 4	 | DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 10G <br/> Z-Turn Zynq controller <br/> Optional TTCL adapter |	0x3141 |   -"- |
-| Pixie-Net-8-14-125 | 1	 | DB01, 8  channel, <br/> 14 bit, 125 MSPS, <br/> 10G <br/> Z-Turn Zynq controller |	0x3111 | -"- |	
-| Pixie-Net-16-14-250W | 4W	| DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 1G (White Rabbit) <br/> MicroZed Zynq controller	| 0x2540 <br/> (unchanged from pre-release) |	[sw-arm-pnxl: 3.32](./release_packages/sw-arm-pnxl-3p32.zip) <br/>  [sw-host-pnxl: 09072022](./release_packages/sw-host-pnxl-09072022.zip) <br/>  [sw-igor-pnxl: 6.21](./release_packages/sw-igor-pnxl-6p21.zip) <br/> sd-bootfiles-pnxl: MZ-3.25 <br/>  sd-image-pnxl: 09072022 <br/> [Pixie_Net_XL_Manual: 3.32](./release_packages/Pixie_Net_XL_Manual.pdf) |
+| Pixie-Net-8-14-500 |7  | DB06, 8  channel, <br/> 14 bit, 500 MSPS, <br/> 10G <br/> Z-Turn Zynq controller | 0x3871 |	[sw-arm-pnxl: 3.38](./release_packages/sw-arm-pnxl-3p38.zip) <br/> [sw-host-pnxl: 09072022](./release_packages/sw-host-pnxl-09072022.zip)<br/> [sw-igor-pnxl: 6.38](./release_packages/sw-igor-pnxl-6p38.zip) <br/> sd-bootfiles-pnxl: ZT-3.25 or ZT-3.32<br/> sd-image-pnxl: 09072022 <br/> [Pixie_Net_XL_Manual: 3.38](./release_packages/Pixie_Net_XL_Manual.pdf) |
+| Pixie-Net-16-14-250 | 4	 | DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 10G <br/> Z-Turn Zynq controller <br/> Optional TTCL adapter |	0x3841 |   same as above |
+| Pixie-Net-8-14-125 | 1	 | DB01, 8  channel, <br/> 14 bit, 125 MSPS, <br/> 10G <br/> Z-Turn Zynq controller |	0x3811 | same as above |	
+| Pixie-Net-16-14-250W | 4W	| DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 1G (White Rabbit) <br/> MicroZed Zynq controller	| 0x2540 <br/> (unchanged from pre-release) |	[sw-arm-pnxl: 3.32](./release_packages/sw-arm-pnxl-3p32.zip) <br/>  [sw-host-pnxl: 09072022](./release_packages/sw-host-pnxl-09072022.zip) <br/>  [sw-igor-pnxl: 6.21](./release_packages/sw-igor-pnxl-6p21.zip) <br/> sd-bootfiles-pnxl: MZ-3.25 <br/>  sd-image-pnxl: 09072022 <br/> [Pixie_Net_XL_Manual: 3.38](./release_packages/Pixie_Net_XL_Manual.pdf) |
  
 ## Release Information
 A full Pixie-Net XL software/firmware release consists of the following components
@@ -32,6 +37,23 @@ A full Pixie-Net XL software/firmware release consists of the following componen
 For first time users, please also see the [Quick Start guide](./release_packages/PixieNetXL_QuickStart.pdf)
 
 ## Older Releases 
+
+## Version 3.32, November 2022
+Release updates include
+-	Debugged and tested CFD in variant 4W
+
+Known bugs:
+- Variant 1: The automatic ADC initialization at boot time sometimes fails. This will be reported as a warning by ./progfippi. To correct, execute ./adcinit manually from the command line.  
+
+Supported variants are 
+
+| Part Number | Variant ID	| Hardware Revision |	Firmware Revision |	Software Revision |
+| ----------- | ----------- | ----------------- | ----------------- | ----------------- |
+| Pixie-Net-8-14-500 |7  | DB06, 8  channel, <br/> 14 bit, 500 MSPS, <br/> 10G <br/> Z-Turn Zynq controller | 0x3171 |	[sw-arm-pnxl: 3.32](./release_packages/sw-arm-pnxl-3p32.zip) <br/> [sw-host-pnxl: 09072022](./release_packages/sw-host-pnxl-09072022.zip)<br/> [sw-igor-pnxl: 6.21](./release_packages/sw-igor-pnxl-6p21.zip) <br/> sd-bootfiles-pnxl: ZT-3.25 <br/> sd-image-pnxl: 09072022 <br/> [Pixie_Net_XL_Manual: 3.32](./release_packages/Pixie_Net_XL_Manual.pdf) |
+| Pixie-Net-16-14-250 | 4	 | DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 10G <br/> Z-Turn Zynq controller <br/> Optional TTCL adapter |	0x3141 |   -"- |
+| Pixie-Net-8-14-125 | 1	 | DB01, 8  channel, <br/> 14 bit, 125 MSPS, <br/> 10G <br/> Z-Turn Zynq controller |	0x3111 | -"- |	
+| Pixie-Net-16-14-250W | 4W	| DB04, 16  channel, <br/> 14 bit, 250 MSPS, <br/> 1G (White Rabbit) <br/> MicroZed Zynq controller	| 0x2540 <br/> (unchanged from pre-release) |	[sw-arm-pnxl: 3.32](./release_packages/sw-arm-pnxl-3p32.zip) <br/>  [sw-host-pnxl: 09072022](./release_packages/sw-host-pnxl-09072022.zip) <br/>  [sw-igor-pnxl: 6.21](./release_packages/sw-igor-pnxl-6p21.zip) <br/> sd-bootfiles-pnxl: MZ-3.25 <br/>  sd-image-pnxl: 09072022 <br/> [Pixie_Net_XL_Manual: 3.32](./release_packages/Pixie_Net_XL_Manual.pdf) |
+ 
 
 ## Version 3.31, October 2022
 Release updates include
