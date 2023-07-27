@@ -3,7 +3,7 @@
 
 ## Version 3.3A, July 2023
 Release updates include
--	GFix typo in temporary MCA arrays' names (MCA.csv)
+-	Fix typo in temporary MCA arrays' names (MCA.csv)
 - New webops page to view/edit all settings in file settings.ini
 - Better indication in webpages where data is coming from
 - Add option for periodic updates in MCA webpage
