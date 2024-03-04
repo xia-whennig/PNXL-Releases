@@ -1,5 +1,22 @@
 # Pixie-Net XL Release Notes
 
+## Version 3.3F, March 2024 (preview release)
+Release updates include
+- changes to parameter values in defaults.ini: 
+  -- DEST_PORT0            61002
+  -- SRC_PORT1             61004
+  -- DATA_FLOW             2
+  -- SLEEP_TIMEOUT         65535
+  -- MCSRA_P4ERUNSTATS_01  1
+  which matches recommended values in settings.ini
+- the parameter EXTERN_DELAYLEN is applied internally with 4x the specified value 
+  for example EXTERN_DELAYLEN = 1.5, actual delay 6.0us. 
+- the CLK_OUT connector now outputs the TTCL approval window
+- the TRIG_OUT connector now outputs the hit flags (OR of channels 8-15) if GROUPMODE_FIP=1
+- adjusted ADC clock delay for 14/250 variant to "10" for better ADC data capture 
+- ttclinit routine now loops over both Kintex chips
+- multiplicity count is output to TTCL interface board via XTRA[5:2]
+- Firmware for Variant 1 not updated yet. 
 
 ## Version 3.3E, January 2024
 Release updates include
